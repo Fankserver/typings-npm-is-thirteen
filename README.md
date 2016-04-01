@@ -1,2 +1,7 @@
-# typings-npm-is-thirteen
-Typings for npm module is-thirteen
+# Typed is-thirteen
+
+The type definition for [is-thirteen](https://github.com/jezen/is-thirteen).
+
+## License
+
+MIT
