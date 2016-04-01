@@ -1,5 +1,5 @@
 declare function is(value: any): IsThirteen.ICore;
-declare module IsThirteen {
+declare namespace IsThirteen {
 	interface ICore {
 		thirteen(): boolean;
 		roughly: IThirteen;
