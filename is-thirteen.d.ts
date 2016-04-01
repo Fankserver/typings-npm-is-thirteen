@@ -2,9 +2,9 @@ declare function is(value: any): IsThirteen.ICore;
 declare module IsThirteen {
 	interface ICore {
 		thirteen(): boolean;
-		roughly: IRoughly;
-		returning: IReturning;
-		not: INot;
+		roughly: IThirteen;
+		returning: IThirteen;
+		not: IThirteen;
 		divisible: IDivisible;
 		square: ISquare;
 		greater: IGreater;
@@ -15,73 +15,34 @@ declare module IsThirteen {
 		minus(value: number): ICore;
 		times(value: number): ICore;
 		dividedby(value: number): ICore;
-		canSpell: ICanSpell;
-		anagramOf: IAnagramOf;
-		backwards: IBackwards;
-		base(raxid: number): IBase;
+		canSpell: IThirteen;
+		anagramOf: IThirteen;
+		backwards: IThirteen;
+		base(raxid: number): IThirteen;
 	}
 
-	interface IRoughly {
-		thirteen(): boolean;
-	}
-
-	interface IReturning {
-		thirteen(): boolean;
-	}
-
-	interface INot {
+	interface IThirteen {
 		thirteen(): boolean;
 	}
 
 	interface IDivisible {
-		by: IDivisibleBy;
-	}
-	interface IDivisibleBy {
-		thirteen(): boolean;
+		by: IThirteen;
 	}
 
 	interface ISquare {
-		of: ISquareOf;
-	}
-	interface ISquareOf {
-		thirteen(): boolean;
+		of: IThirteen;
 	}
 
 	interface IGreater {
-		than: IGreaterThan;
-	}
-	interface IGreaterThan {
-		thirteen(): boolean;
+		than: IThirteen;
 	}
 
 	interface ILess {
-		than: ILessThan;
-	}
-	interface ILessThan {
-		thirteen(): boolean;
+		than: IThirteen;
 	}
 
 	interface IWithin {
-		of: IWithinOf;
-	}
-	interface IWithinOf {
-		thirteen(): boolean;
-	}
-
-	interface ICanSpell {
-		thirteen(): boolean;
-	}
-
-	interface IAnagramOf {
-		thirteen(): boolean;
-	}
-
-	interface IBackwards {
-		thirteen(): boolean;
-	}
-
-	interface IBase {
-		thirteen(): boolean;
+		of: IThirteen;
 	}
 }
 
